@@ -1,0 +1,12 @@
+services:
+
+  wiremock:
+    container_name: mock-local
+    image: rodolpheche/wiremock
+    volumes:
+      - type: bind
+        source: ./wiremock/mocks
+        target: /home/wiremock
+    ports:
+      - "9595:9595"
+    command: --port=9595 --global-response-templating --root-dir=/home/wiremock
