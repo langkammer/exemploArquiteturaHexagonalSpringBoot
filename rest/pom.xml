@@ -7,16 +7,24 @@
         <artifactId>aplicacao-hexagonal</artifactId>
         <groupId>br.com.robson</groupId>
         <version>0.0.1-SNAPSHOT</version>
-        <relativePath>../</relativePath>
+        <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <groupId>br.com.robson</groupId>
     <artifactId>rest</artifactId>
     <version>1.0-SNAPSHOT</version>
     <name>Rest (Controllers)</name>
 
     <dependencies>
-
+        <dependency>
+            <groupId>br.com.robson</groupId>
+            <artifactId>dominio</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>br.com.robson</groupId>
+            <artifactId>core</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
     </dependencies>
 
 </project>

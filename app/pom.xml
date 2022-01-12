@@ -7,16 +7,19 @@
         <artifactId>aplicacao-hexagonal</artifactId>
         <groupId>br.com.robson</groupId>
         <version>0.0.1-SNAPSHOT</version>
-        <relativePath>../</relativePath>
+        <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <groupId>br.com.robson</groupId>
     <artifactId>app</artifactId>
     <version>1.0-SNAPSHOT</version>
     <name>Aplicação Principal</name>
 
     <dependencies>
-
+        <dependency>
+            <groupId>br.com.robson</groupId>
+            <artifactId>rest</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -43,7 +46,6 @@
                 </executions>
                 <configuration>
                     <finalName>app</finalName>
-                    <classfier>app</classfier>
                     <mainClass>br.com.robson.AppMain</mainClass>
                 </configuration>
             </plugin>
